@@ -1,0 +1,12 @@
+body{
+    background-color: #eceff1;
+}
+form label{
+    margin-bottom: 3px;
+}
+.layout-card{
+    margin-top: 5vh;
+}
+#logo{
+    margin-left: 2vw;
+}

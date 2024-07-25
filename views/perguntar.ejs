@@ -1,0 +1,25 @@
+<%- include ('./partials/header.ejs') %>
+<body>
+    <%- include ('./partials/navbar.ejs') %>
+    <div class="container">
+        <div class="card layout-card">
+            <div class="card-header">
+                <h3>Realizar Perguntas</h3>
+            </div>
+
+            <div class="card-body">
+                <form action="/salvarpergunta" method="post">
+                    <label for="ask" role="button">Título</label>
+                    <input name="titulo" id="ask" type="text" placeholder="Título" class="form-control">
+                    <br>
+                    <label for="body" role="button">Descrição</label>
+                    <textarea name="descricao" id="body" placeholder="Descreva aqui sua pergunta..." class="form-control"></textarea>
+                    <br>
+                    <button class="btn btn-primary">Perguntar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+<%- include ('./partials/footer.ejs') %>
